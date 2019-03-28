@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,portuguese]{babel}
+\usepackage{booktabs}
+\usepackage{makecell}
+
+\begin{document}
+	
+	Dados da população estão na tabela~\ref{tabela_pop}. Vou citar isso aqui:
+	\cite{de2012harmonia}.
+	
+	Vamos falar de cidades\footnote{Somente cidades legais.}.
+	
+	\begin{table}[htb!]
+		\centering
+		\caption{Variação de população em cidades do Sul de Minas}
+		\label{tabela_pop}
+		\begin{tabular}{| l | c | c |}
+			\toprule
+			Cidade & População 2000 & População 2010 \\
+				\midrule
+				Varginha & 123.000 & 127.000 \\
+				\midrule
+				Paraguaçu & 20.000 & 22.000 \\ 
+			\bottomrule	
+		\end{tabular}
+	
+		\centering
+		\caption{Variação de população em cidades do Sul de Minas}
+		\label{tabela_pop2}
+		\begin{tabular}{@{}lcc@{}}
+			\toprule
+			\thead{Cidade} & \thead{População 2000} & \thead{População 2010} \\
+			\midrule
+			\makecell{Wagner Aristides Machado da Silva \\ Pereira Júnior} & 123.000 & 127.000 \\
+			Paraguaçu & 20.000 & 22.000 \\ 
+			\bottomrule
+		\end{tabular}
+	\end{table}
+
+	\bibliographystyle{abbrv}
+	\bibliography{ref}
+\end{document}
