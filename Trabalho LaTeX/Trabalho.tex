@@ -235,12 +235,29 @@
 			
 		
 		\subsection{amsart}
+			O pacote amsart é amplamente utilizado para publicações da American Mathematical Society, garantindo que o documento editado seguirá os padrões estabelecidos pelo jornal. Na maioria das versões de LaTeX, o pacote já está incluso e pode ser utilizado por meio da linha\\
+			\texttt{$\backslash$documentclass[]$\{$amsart$\}$}\\
+			Contudo, o pacote pode ser baixado por meio do link \texttt{https://ctan.org/pkg/amsart}, onde o arquivo contém diversos exemplos de como o pacote deve ser utilizado.
 		
 		\subsection{amscd}
+			O pacote amscd, por sua vez, é utilizado para a criação de diagramas comutativos. O pacote, também desenvolvido pela AMS, possui a limitação de oferecer apenas diagramas retangulares, não tendo a capacidade de gerar setas diagonais ou funções mais exóticas.
+			
+			Para utilizar esse pacote, o usuário deve inserir a linha \texttt{$\backslash$usepackage$\{amscd\}$} e, caso seja necessário, o download do pacote pode ser feito por meio do link \texttt{https://ctan.org/pkg/amscd}. A seguir, um exemplo do código de um diagrama comutativo e seu resultado.
+			
+			\begin{figure}[h]
+				\begin{center}
+					\includegraphics[scale=0.4]{amscd.png}
+				\end{center}
+			\end{figure}
+			
 		
 		\subsection{amsfonts}
+			Voltado para um leque de caracteres matemáticos, o pacote amsfonts carrega diversas variações de fontes já existentes (letras gregas e símbolos matemáticos subscritos), além de incluir novos caracteres (novos símbolos matemáticos e letras Fraktur).
+			
+			O pacote pode ser incluído através da linha \texttt{$\backslash$usepackage$\{amsfonts\}$} e pode ser baixado, junto com um manual de uso, através do link \texttt{https://ctan.org/pkg/amsfonts}.
 		
 		\subsection{amsmath}
+		
 		
 		\subsection{amssymb}
 		
