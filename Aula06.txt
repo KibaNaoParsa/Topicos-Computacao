@@ -1,0 +1,55 @@
+ls > arquivo.txt
+
+// O terminal cria um arquivo na pasta local com o resultado da listagem (ls). O operador > faz com que qualquer arquivo de mesmo nome anterior seja sobrescrito.
+
+ls >> arquivo.txt
+
+// O operador >> anexa as informações ao arquivo, ou seja, não deleta as informações anteriores.
+
+mkdir z 2> arquivo.txt
+
+// Em uma circunstância onde o diretório z já existe, o operador 2> faz com que a mensagem de erro seja direcionada ao .txt.
+
+mkdir > saida.txt 2> erro.txt
+
+// Nessa linha, qualquer mensagem de retorno será direcionada ao saida.txt e qualquer mensagem de erro será mandada ao erro.txt.
+
+ls | tee ls.txt
+
+// O comando tee faz com que a saída padrão seja mandada ao arquivo ls.txt E seja impressa na tela
+
+<
+
+// Em caso se algum programa interativo, o operador < manda as respostas ao programa por meio de um arquivo ao invés de esperar uma resposta do usuário.
+
+mv [NOME ORIGINAL] [NOME PRETENDIDO]
+
+// O comando mv, nesse caso, renomeia um arquivo qualquer com os dois argumentos.
+
+mv [NOME DO ARQUIVO] [PASTA PRETENDIDA]/
+
+// Aqui, o comando move o arquivo para a pasta desejada.
+
+rm -rf
+
+// Apaga uma pasta, mesmo se tiver algum arquivo dentro dela
+
+cp [ARQUIVO ORIGINAL] [CÓPIA]
+
+// Auto-explicativo
+
+find -iname "*.doc"
+
+// Lista todos os arquivos que terminam em .doc.
+
+mv a* [PASTA DESTINO]
+
+// Move todos os arquivos que começam com "a" para uma pasta determinada.
+
+touch arq; mkdir pasta; mv arq pasta
+
+// Na ordem, cria um arquivo, uma pasta e move um arquivo para a pasta criada. O ; funciona como separador de comandos, de modo que seja possível digitar mais de um comando por linha.
+
+mkdir pasta && touch b
+
+// O operador E faz com que o segundo comando só seja executado se o primeiro for feito com sucesso.
