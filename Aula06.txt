@@ -70,4 +70,5 @@ sort arquivo.txt
  cat arquivo.txt | cut -d' [DELIMITADOR] ' -f1
  // Exibe apenas a primeira parte (definida no -f1) de um texto até chegar no delimitador
  
- 
+ cat texto.txt | tr [a-z] [A-Z] | cut -c1 | nl | grep T | cut -f1
+ // Os comandos após o | fazem, respectivamente: Transforma as letras para maiúsculas; Corta qualquer valor após o primeiro caractere; Lista os números das linhas; Escolhe linhas que começam com T; Exibe somente a linha
