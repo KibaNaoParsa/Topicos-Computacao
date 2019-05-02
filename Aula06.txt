@@ -49,4 +49,25 @@ more arquivo.txt / less arquivo.txt
 wc arquivo.txt
 // Lista n° de linhas, palavras e caracteres.
 
+ps -x
+// Lista os processos em execução no PC
 
+kill -9 [nº processo]
+// Auto-explicativo
+
+du -sh *
+// Lista a qtde de memória utilizada por cada pasta
+
+sort arquivo.txt
+// Ordena um arquivo em ordem alfabética
+
+ cat arquivo.txt | sort | uniq
+ // Efeito do sort. O comando uniq garante que linhas repetidas não serão exibidas.
+ 
+ tr [a-z] [A-Z]
+ // Transformação de caracteres
+ 
+ cat arquivo.txt | cut -d' [DELIMITADOR] ' -f1
+ // Exibe apenas a primeira parte (definida no -f1) de um texto até chegar no delimitador
+ 
+ 
