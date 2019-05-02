@@ -23,39 +23,30 @@ mv [NOME DO ARQUIVO] [PASTA PRETENDIDA]/
 // Aqui, o comando move o arquivo para a pasta desejada.
 
 rm -rf
-
 // Apaga uma pasta, mesmo se tiver algum arquivo dentro dela
 
 cp [ARQUIVO ORIGINAL] [CÓPIA]
-
 // Auto-explicativo
 
 find -iname "*.doc"
-
 // Lista todos os arquivos que terminam em .doc.
 
 mv a* [PASTA DESTINO]
-
 // Move todos os arquivos que começam com "a" para uma pasta determinada.
 
 touch arq; mkdir pasta; mv arq pasta
-
 // Na ordem, cria um arquivo, uma pasta e move um arquivo para a pasta criada. O ; funciona como separador de comandos, de modo que seja possível digitar mais de um comando por linha.
 
 mkdir pasta && touch b
-
 // O operador E faz com que o segundo comando só seja executado se o primeiro for feito com sucesso.
 
 nl arquivo.txt
-
 // Exibe o arquivo enumerando as linhas
 
 more arquivo.txt / less arquivo.txt
-
 // Os comandos listam o texto para o usuário avançar com Enter. O less não deixa o texto na tela após visualização.
 
 wc arquivo.txt
-
 // Lista n° de linhas, palavras e caracteres.
 
 
