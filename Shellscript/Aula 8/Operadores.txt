@@ -1,0 +1,23 @@
+Operadores de comparação
+
+NUMÉRICOS -> -eq   (igual)
+             -neq  (não-igual)    
+             -le   (menor ou igual)
+             -ge   (maior ou igual)
+             -lt   (menor que)
+             -gt   (maior que)
+
+
+STRING    -> =     (igual)
+             !=    (diferente)
+             -n    (não-nula)
+             -z    (nula)
+             
+
+ARQUIVOS  -> -d    (é um diretório)
+             -f    (é um arquivo)
+
+LÓGICOS   -> -a    (&&)
+             -o    (||)
+
+
