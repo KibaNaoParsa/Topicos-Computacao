@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Elyas Correa Nogueira
+# Israel Mateus Melo Oliveira
+
 echo "Insira o nome (ou endereço) do arquivo a ser analisado: "
 read arquivo
 
