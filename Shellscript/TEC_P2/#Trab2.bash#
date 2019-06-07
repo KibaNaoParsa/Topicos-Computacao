@@ -1,2 +1,0 @@
-#!/bin/bash
-zcat cefetmg_pavilhao_1.kml | awk -F"<name>" '{print $2;}' | awk -F"</name>" '{print $1;}' | cut -d'.' -f1
