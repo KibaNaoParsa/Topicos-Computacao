@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo cat Notas.txt | awk '{ print "linha lida" }'
+
+echo cat Notas.txt | awk '{ print $2 }'
+
+echo cat Notas.txt | awk '{ soma = soma + $2; } END { print "A média é:" soma; }'
+
+echo cat Notas.txt | awk ' BEGIN { print "Calculadora de média"; } { soma = soma + $2; linhas = linhas + 1; } END { print "A média é:" soma/linhas; }'
