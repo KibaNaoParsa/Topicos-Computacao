@@ -1,5 +1,8 @@
 #!/usr/bin/awk -f
 
+# Elyas Correa Nogueira
+# Israel Mateus Melo Oliveira
+
 BEGIN { ocorrencia[360] = 0; soma[360] = 0; 
 	for ($i = 0; $i < 360; $i++) {
 		ocorrencia[$i]=0;
